@@ -132,9 +132,11 @@ If you find this project useful, you can support the author with a voluntary don
 DOGE:
 
 D8PnN5rmLNLtZLGMK1h6ThtP8rnt18t1hR
-![DOGE QR](images/DOGE.jpg)
+
+<img src="images/DOGE.jpg" width="300">
 
 USDT (TRC20):
 
 TBpWFGKfi1E7yeMsPfFDShi5uSYoZT2unT
-![USDT QR](images/USDT.jpg)
+
+<img src="images/USDT.jpg" width="300">
