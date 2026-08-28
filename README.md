@@ -34,6 +34,12 @@ The program will display cryptocurrency prices in a floating window on your desk
 
 Users can customize display settings and add their own tokens by editing the AutoHotkey source code.
 
+## Source Code
+
+The source code is written in AutoHotkey v2.
+
+To modify the script, install AutoHotkey v2 first.
+
 ### Display Settings
 
 ```text
