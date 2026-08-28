@@ -124,7 +124,7 @@
 
 更新时间控件 := 窗口.AddText(
     "x10 y5 w260 h25 cFFFFFF",
-    "更新时间：读取中"
+    "Update: Loading"
 )
 
 
@@ -137,7 +137,7 @@
 
 连接控件 := 窗口.AddText(
     "x270 y5 w70 h25 c00FF00",
-    "已连接"
+    "Connected"
 )
 
 
@@ -564,16 +564,16 @@ OnMessage(
 
                 更新时间 := FormatTime(
                     ,
-                    "yyyy年M月d日tt h:mm"
+"yyyy-MM-dd HH:mm"
                 )
 
 
                 更新时间控件.Text :=
-                "更新时间：" 更新时间
+                "Update：" 更新时间
 
 
 
-                连接控件.Text := "已连接"
+                连接控件.Text := "Connected"
 
                 连接控件.SetFont(
                     "c00FF00"
@@ -721,7 +721,7 @@ OnMessage(
         catch
         {
 
-            连接控件.Text := "无连接"
+            连接控件.Text := "Disconnected"
 
 
             连接控件.SetFont(
