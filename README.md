@@ -124,3 +124,15 @@ Parameters:
 ## License
 
 MIT License
+
+## Support
+
+If you find this project useful, you can support the author with a voluntary donation.
+
+DOGE:
+
+D8PnN5rmLNLtZLGMK1h6ThtP8rnt18t1hR
+
+USDT (TRC20):
+
+TBpWFGKfi1E7yeMsPfFDShi5uSYoZT2unT
