@@ -2,25 +2,35 @@
 
 A lightweight cryptocurrency price floating window built with AutoHotkey.
 
-This tool displays real-time cryptocurrency prices in a small always-on-top window.  
+This tool displays real-time cryptocurrency prices in a small always-on-top window.
 It supports Binance spot trading pairs and Dexscreener on-chain tokens with price changes and visual indicators.
 
 ## Features
 
-- Binance spot price monitoring
-- Dexscreener on-chain token price monitoring
-- Real-time price updates
-- 24-hour price change display
-- Green/red price change indicators
-- Price movement arrows
-- Always-on-top floating window
-- Low resource usage
-- No installation required
+* Binance spot price monitoring
+* Dexscreener on-chain token price monitoring
+* Real-time price updates
+* 24-hour price change display
+* Green/red price change indicators
+* Price movement arrows
+* Always-on-top floating window
+* Low resource usage
+* No installation required
 
 ## Supported APIs
 
-- Binance API
-- Dexscreener API
+* Binance API
+* Dexscreener API
+
+## Version
+
+Current version: v1.0.1
+
+### v1.0.1 Update
+
+* Fixed on-chain token price refresh issues
+* Changed Dexscreener tracking from token lookup to specific liquidity pool tracking
+* Improved price stability for on-chain tokens
 
 ## Usage
 
@@ -90,17 +100,16 @@ TokenList := [
 
 Parameters:
 
-- `Symbol` - Binance trading pair
-- `Decimal Places` - Number of decimal digits displayed for price
-- `Name Spacing` - Spacing between characters in token name
-
+* `Symbol` - Binance trading pair
+* `Decimal Places` - Number of decimal digits displayed for price
+* `Name Spacing` - Spacing between characters in token name
 
 ## On-chain Tokens
 
 Format:
 
 ```ahk
-["Name", "Contract Address", Decimal Places, Name Spacing]
+["Name", "Pair Address", Decimal Places, Name Spacing]
 ```
 
 Example:
@@ -108,24 +117,28 @@ Example:
 ```ahk
 OnChainTokenList := [
 
-    ["NiuLai/USDT","0xbeea1d618e533a387d941f58a7d4c9b7bd377777",5,1]
+    ["NiuLai/USDT","0xE5Ae318389B8D6d09370a675479c64862152D126",5,1]
 
 ]
 ```
 
 Parameters:
 
-- `Name` - Display name
-- `Contract Address` - Token contract address used by Dexscreener API
-- `Decimal Places` - Number of decimal digits displayed for price
-- `Name Spacing` - Spacing between characters in token name
+* `Name` - Display name
+* `Pair Address` - Dexscreener liquidity pool address used for price tracking
+* `Decimal Places` - Number of decimal digits displayed for price
+* `Name Spacing` - Spacing between characters in token name
 
+Note:
+
+On-chain token monitoring uses Dexscreener pair addresses instead of token addresses to ensure accurate liquidity pool price tracking.
 
 ## Notes
 
-- This project is created with AutoHotkey v2.
-- The application is lightweight and designed for personal desktop monitoring.
-- Cryptocurrency prices are provided by third-party APIs.
+* This project is created with AutoHotkey v2.
+* The application is lightweight and designed for personal desktop monitoring.
+* Cryptocurrency prices are provided by third-party APIs.
+* This project is not a trading tool and does not provide investment advice.
 
 ## License
 
