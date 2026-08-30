@@ -9,6 +9,7 @@
 正在拖动 := false
 
 刷新时间 := 2000
+链上刷新时间 := 5000
 
 
 窗口宽度 := 350
@@ -76,7 +77,7 @@
 
 链上币列表 := [
 
-    ["牛来/USDT","0xbeea1d618e533a387d941f58a7d4c9b7bd377777",5,1],
+    ["牛来/USDT","0xe5ae318389b8d6d09370a675479c64862152d126",5,1],
 
 
 ]
@@ -789,10 +790,10 @@ OnMessage(
 
 
             请求.Open(
-                "GET",
-                "https://api.dexscreener.com/latest/dex/tokens/" 合约,
-                true
-            )
+    "GET",
+    "https://api.dexscreener.com/latest/dex/pairs/bsc/0xe5ae318389b8d6d09370a675479c64862152d126",
+    false
+)
 
 
 
@@ -971,5 +972,5 @@ SetTimer(
 
 SetTimer(
     刷新链上价格,
-    刷新时间
+    链上刷新时间
 )
